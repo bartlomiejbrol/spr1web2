@@ -1,6 +1,6 @@
-extends layout
+extends menu
 
-block content
+block contentMenu
   if passport
     p Zawartość req.session.passport:
       ul
@@ -14,3 +14,5 @@ block content
       ul
         for val, key in user
           li #{key}: #{val}
+
+            Zalogowany
